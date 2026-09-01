@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript tutorial</title>
+</head>
+<body>
+    <h1 style="color:antiquewhite; background-color: #291a1a;">Welcome to js learning</h1>
+    <button id="b1" style="color:green;" onclick="clicked()">Click me   </button>
+    <script>
+        console.log("Hello, World!");
+        document.write("This is doc write");
+        console.error("stupid error");
+        var num1=123798;
+        var num2 =4320;
+        console.log(num1+num2);
+        var student = {
+            ayan:75,
+            aoun:25,
+        };
+        console.log(student);
+        var arr=[1,2,3,4,5];
+        console.log(arr[0]);
+        function agecheck(a){
+            if (a>18){
+                console.log("You can drink rasna water");
+
+            }
+            else{
+                console.log("You are not allowed to drink rasna water");
+            }
+        }
+//agecheck(17);
+  //      mystring="Ayyan is good boy";
+    //    console.log(mystring.length);
+      //  console.log(mystring.indexOf("is"));
+        //d=mystring.replace("Ayyan" , "ali");
+        //console.log(mystring);
+        //console.log(d);
+        //mydate=new Date();
+        //console.log(mydate);
+        a1=document.getElementById("b1");
+        console.log(a1);
+        function clicked(){
+            //alert("button was clicked")
+           // console.log("button clicked");
+
+        }
+    function f1(){
+        var i=1;
+        console.log(i);
+        i++;
+    }    
+    setInterval(f1,3000);
+    b1.addEventListener('mouseup',function(){
+        document.querySelector('#b1').innerHTML="Text changed";
+        console.log("Button was clicked");
+    })
+     b1.addEventListener('mousedown',function(){
+        document.querySelector('#b1').innerHTML="wapsi";
+        console.log("Button was clicked");
+    })
+
+
+    </script>
+</body>
+</html>
